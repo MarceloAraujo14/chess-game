@@ -15,12 +15,12 @@
 }
 
 .board-top{
-    width: 50vw;
-    height: 50vw;
+    width: 700px;
+    height: 700px;
     border-radius: 10px;
     background-color: rgb(160, 105, 69);
     transform-style: preserve-3d;
-    transform: perspective(50cm) rotateX(60deg) rotateY(0deg) rotateZ(0deg);
+    transform: perspective(50cm) rotateX(60deg) rotateY(0deg) rotateZ(135deg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,7 +30,7 @@
 }
 
 .board-top:hover {
-    transform: perspective(50cm) rotateX(60deg) rotateY(0deg) rotateZ(45deg);
+    transform: perspective(50cm) rotateX(60deg) rotateY(0deg) rotateZ(150deg);
 }
 
 .line{
@@ -46,7 +46,7 @@
 .square{
     width: calc(var(--square) - 5px);
     height: 100%;
-    border-radius: 10px;
+    border-radius: 10%;
     background-color: white;
 }
 
@@ -61,7 +61,5 @@
     background-size: contain;
     background-position: center;
     position: absolute;
-    top: 3%;
-    left: 2%;
-    transform: perspective(50cm) rotateX(-90deg) rotateY(0deg) rotateZ(0deg) translate3d(0px, -50px, 0px);
+    transform: perspective(50cm) rotateX(-90deg) rotateY(135deg) rotateZ(0deg) translate3d(-0.5vw, -50%, 1.5vw);
 }
